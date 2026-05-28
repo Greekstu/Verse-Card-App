@@ -24,6 +24,7 @@ body{
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(70, 45, 25, 0.18);
     text-align: center;
+    transition: all 0.8s ease;
 }
 
 .card-container p{
@@ -36,26 +37,30 @@ body{
 }
 
 .verse-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background: #fffaf3;
     width:90%;
-    max-width: 600px;
+    max-width: 450px;
+    min-height: 600px;
     border-radius: 20px;
-    text-align: center;
     background: #2cd8c2;
     border: 1px solid #d8bfa8;
     box-shadow: 0 15px 35px rgba(40, 40, 40, 0.22);
-    padding: 2rem;
-    margin-top: 1.5rem;
+    padding: 3rem 4rem;
+    margin-top: 4rem;
     opacity: 0;
     visibility: hidden;
-    transform: translateY(20px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
+    transform: scale(0.85);
+    transition: opacity 1s ease, transform 1s ease;
 }
 
 .verse-card.show {
     opacity: 1;
     visibility: visible;
-    transform: translateY(0);
+    transform: scale(1);
 }
 #generator {
     padding: 0.75rem 1.5rem;
@@ -74,6 +79,7 @@ body{
 }
 
 #popup-verse {
+    text-align: center;
     font-size: 1.2rem;
     font-weight: 500;
     line-height: 1.7;
@@ -81,6 +87,16 @@ body{
     padding: 1rem;
     letter-spacing: 0.3px;
 
+}
+
+#verse-reference {
+    text-align: center;
+    font-size: .95rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #5c4033;
+    margin-top: 1.5rem;
+    letter-spacing: 0.2px;
 }
 
 
