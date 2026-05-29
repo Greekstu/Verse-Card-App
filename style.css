@@ -46,7 +46,10 @@ body{
     max-width: 450px;
     min-height: 600px;
     border-radius: 20px;
-    background: #2cd8c2;
+    background-image: url('./Media/Cosmos_LineArt.png');
+    background-size: 200px;
+    background-position: top left;
+    background-repeat: no-repeat;
     border: 1px solid #d8bfa8;
     box-shadow: 0 15px 35px rgba(40, 40, 40, 0.22);
     padding: 3rem 4rem;
